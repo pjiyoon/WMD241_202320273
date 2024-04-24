@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+body {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding-left: 70px;
+  padding-right: 10px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 1rem 6rem;
+}
+.header-left > * {
+  display: inline;
+  font-weight: 500;
+}
+.header-left :last-child {
+  border-left: 2px solid white;
+  padding-inline-start: 0.5rem;
+  margin-inline-start: 0.5rem;
+}
+nav button {
+  padding: 0.6rem 1.5rem;
+  border-radius: 0.3rem;
+  color: white;
+  border: none;
+  background-color: #4c5fd5;
+}
+nav button:first-child {
+  background-color: rgb(34, 33, 33);
+  border: 1px solid white;
+  margin-right: 0.3rem;
+}
+
+header {
+  background-color: #a3adea;
+  display: flex;
+  justify-content: center;
+  padding-block: 7rem;
+  overflow-x: hidden;
+}
+header div > * {
+  width: 100%;
+}
+header div {
+  max-width: 70%;
+}
+.header-right {
+  display: none;
+}
+@media screen and (min-width: 720px) {
+  header div {
+    max-width: 50%;
+    display: grid;
+    gap: 0.5rem;
+  }
+  header h1 {
+    font-weight: 500;
+    font-size: calc(100% + 2.5rem);
+    letter-spacing: -1px;
+  }
+  .header-right {
+    display: block;
+  }
+}
+header input {
+  padding: 1.3rem 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid grey;
+}
+
+section {
+  display: flex;
+  max-width: 80%;
+  margin-inline: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem 2rem;
+  margin-top: 6rem;
+}
+section .search-card {
+  flex: 400px 1 0;
+  box-shadow: 2px 2px 7px 0px #5f5f8b85;
+  padding: 2rem;
+  gap: 1rem;
+  display: grid;
+  border-radius: 0.4rem;
+}
+span a {
+  text-decoration: none;
+  color: #4c5fd5;
+}
+footer {
+  margin-top: 6.25rem;
+  background-color: rgb(19, 18, 18);
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 6.25rem;
+}
